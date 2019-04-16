@@ -1,0 +1,11 @@
+C:\Users\pbelardo\dev\facets\engines\rpcPoC\engine-controller\bin\Debug\netcoreapp2.2\engine-controller.deps.json
+C:\Users\pbelardo\dev\facets\engines\rpcPoC\engine-controller\bin\Debug\netcoreapp2.2\engine-controller.runtimeconfig.json
+C:\Users\pbelardo\dev\facets\engines\rpcPoC\engine-controller\bin\Debug\netcoreapp2.2\engine-controller.runtimeconfig.dev.json
+c:\Users\pbelardo\dev\facets\engines\rpcPoC\engine-controller\bin\Debug\netcoreapp2.2\engine-controller.dll
+c:\Users\pbelardo\dev\facets\engines\rpcPoC\engine-controller\bin\Debug\netcoreapp2.2\engine-controller.pdb
+c:\Users\pbelardo\dev\facets\engines\rpcPoC\engine-controller\obj\Debug\netcoreapp2.2\engine-controller.csprojAssemblyReference.cache
+c:\Users\pbelardo\dev\facets\engines\rpcPoC\engine-controller\obj\Debug\netcoreapp2.2\engine-controller.csproj.CoreCompileInputs.cache
+c:\Users\pbelardo\dev\facets\engines\rpcPoC\engine-controller\obj\Debug\netcoreapp2.2\engine-controller.AssemblyInfoInputs.cache
+c:\Users\pbelardo\dev\facets\engines\rpcPoC\engine-controller\obj\Debug\netcoreapp2.2\engine-controller.AssemblyInfo.cs
+c:\Users\pbelardo\dev\facets\engines\rpcPoC\engine-controller\obj\Debug\netcoreapp2.2\engine-controller.dll
+c:\Users\pbelardo\dev\facets\engines\rpcPoC\engine-controller\obj\Debug\netcoreapp2.2\engine-controller.pdb

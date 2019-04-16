@@ -1,0 +1,53 @@
+version: '3'
+services:
+  webapi:
+    image: "patobelardo/rpcpoc-webapi:1.3"
+    environment:
+    - rabbitmq__hostname=rabbit
+    - rabbitmq__user=adminuser
+    - rabbitmq__pass=Pa$$w0rd!
+    ports:
+    - "90:80"
+    depends_on:
+      - rabbit
+    links: 
+      - rabbit
+    restart: on-failure
+  rabbit:
+    image: rabbitmq:management
+    environment:
+    - RABBITMQ_DEFAULT_USER=adminuser
+    - RABBITMQ_DEFAULT_PASS=Pa$$w0rd!
+    ports:
+    - "4369:4369"
+    - "5671:5671"
+    - "5672:5672"
+    - "25672:25672"
+    - "15671:15671"
+    - "15672:15672"
+    healthcheck:
+        test: ["CMD", "curl", "-f", "http://localhost:15672"]
+        interval: 30s
+        timeout: 10s
+        retries: 5
+  engine:
+    image: "patobelardo/rpcpoc-engine:1.3"
+    environment:
+    - engineconnection__port=8091
+    ports:
+     - "8091:8091"
+  engine-controller:
+    image: "patobelardo/rpcpoc-engine-controller:1.3"
+    environment:
+    - rabbitmq__hostname=rabbit
+    - rabbitmq__user=adminuser
+    - rabbitmq__pass=Pa$$w0rd!
+    - engineconnection__hostname=engine
+    - engineconnection__port=8091
+    depends_on:
+      - rabbit
+      - engine
+    links: 
+      - rabbit
+      - engine
+    restart: on-failure

@@ -1,0 +1,19 @@
+syntax = "proto3";
+
+package engine;
+
+// The greeting service definition.
+service EngineWork {
+  // Sends a greeting
+  rpc Execute (EngineRequest) returns (EngineReply) {}
+}
+
+// The request message containing the user's name.
+message EngineRequest {
+  string inputMessage = 1;
+}
+
+// The response message containing the greetings
+message EngineReply {
+  string responseMessage = 1;
+}
